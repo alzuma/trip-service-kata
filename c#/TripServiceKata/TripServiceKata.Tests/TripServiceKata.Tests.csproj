@@ -36,6 +36,10 @@
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.1\lib\nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="Shouldly, Version=3.0.1.0, Culture=neutral, PublicKeyToken=6042cbcb05cbc941">
+      <HintPath>..\packages\Shouldly.3.0.1\lib\net40\Shouldly.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,6 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TripServiceKata\TripServiceKata.csproj">
+      <Project>{45e49cba-0800-4391-ad80-e23837c66d95}</Project>
+      <Name>TripServiceKata</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
